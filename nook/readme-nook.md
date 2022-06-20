@@ -36,7 +36,7 @@ Note: there does not seem to be conclusive evidence that this increases battery 
 
 ```
 adb shell mount -o remount,rw /dev/block/mmcblk0p5 /system
-adb shell mv /system/app/Phone.apk /system/app/Phone.OLD`
+adb shell mv /system/app/Phone.apk /system/app/Phone.OLD
 adb shell mv /system/app/TelephonyProvider.apk /system/app/TelephonyProvider.OLD
 adb reboot
 ```
