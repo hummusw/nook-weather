@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600"><defs>
+		<style>
+			text{font-family:ArialMT, Arial, "Liberation Sans";dominant-baseline:hanging}
+			.gridline{stroke:black; stroke-width:2px;}
+			.bottomanchor{dominant-baseline:alphabetic;}
+			.header1,.header2{text-decoration:underline;}
+			.header1{font-size:32px;}
+			.header2{font-size:24px;}
+			.small{font-size:20px;}
+			.medium{font-size:24px;}
+		</style>
+	</defs>
+	<g id="group-grid">
+		<rect fill="white" x="0" y="0" width="800" height="600"/>
+		<line class="gridline" x1="480" y1="300" x2="800" y2="300"/>
+		<line class="gridline" y1="100" x2="800" y2="100"/>
+		<line class="gridline" y1="500" x2="800" y2="500"/>
+		<line class="gridline" x1="160" y1="500" x2="160" y2="600"/>
+		<line class="gridline" x1="320" y1="500" x2="320" y2="600"/>
+		<line class="gridline" x1="480" y1="100" x2="480" y2="600"/>
+		<line class="gridline" x1="640" y1="500" x2="640" y2="600"/>
+	</g>
+	<g id="group-date">
+		<text id="text-date" x="400" y="50" font-size="40px" style="dominant-baseline:middle" text-anchor="middle"></text>
+	</g>
+	<g id="group-current">
+		<text class="header1" x="20" y="120">Now</text>
+		<text id="text-current-updated" class="small" x="459" y="120" text-anchor="end">Updated at </text>
+		<text id="text-current-wind" class="small" x="20" y="168">Wind: </text>
+		<text id="text-current-humidity" class="small" x="20" y="204">Humidity: </text>
+		<text id="text-current-feels_like" class="small" x="20" y="240">Feels like: </text>
+		<text id="text-current-temp" class="bottomanchor" x="20" y="435" style="font-size:100px"></text>
+		<text id="text-current-weather" class="bottomanchor" x="20" y="479" style="font-size:28px"></text>
+		<image x="259" y="200" width="200" height="200" href="" xlink:href=""/>
+	</g>
+	<g id="group-precipitation">
+		<text class="header2" x="500" y="120">Precipitation</text>
+		<text id="text-precipitation-1hr" class="medium" x="500" y="200">1 hour: </text>
+		<text id="text-precipitation-today" class="medium" x="500" y="240">Today: </text>
+		<image x="652" y="136" width="128" height="128" opacity="0.5" href="" xlink:href=""/>
+	</g>
+	<g id="group-hourly">
+		<text class="header2" x="500" y="320">Hourly</text>
+		<!-- todo -->
+	</g>
+	<g id="group-daily">
+		<text id="text-day0-dow" class="medium" x="20" y="520"></text>
+		<text id="text-day0-temps" class="small bottomanchor" x="20" y="580"></text>
+		<image id="text-day0-icon" x="76" y="518" width="64" height="64" href="" xlink:href="" />
+		<text id="text-day1-dow" class="medium" x="180" y="520"></text>
+		<text id="text-day1-temps" class="small bottomanchor" x="180" y="580"></text>
+		<image id="text-day1-icon" x="236" y="518" width="64" height="64" href="" xlink:href="" />
+		<text id="text-day2-dow" class="medium" x="340" y="520"></text>
+		<text id="text-day2-temps" class="small bottomanchor" x="340" y="580"></text>
+		<image id="text-day2-icon" x="396" y="518" width="64" height="64" href="" xlink:href="" />
+		<text id="text-day3-dow" class="medium" x="500" y="520"></text>
+		<text id="text-day3-temps" class="small bottomanchor" x="500" y="580"></text>
+		<image id="text-day3-icon" x="556" y="518" width="64" height="64" href="" xlink:href="" />
+		<text id="text-day4-dow" class="medium" x="660" y="520"></text>
+		<text id="text-day4-temps" class="small bottomanchor" x="660" y="580"></text>
+		<image id="text-day4-icon" x="716" y="518" width="64" height="64" href="" xlink:href="" />
+	</g>
+	<g id="group-alerts" visibility="hidden">
+		<!-- todo -->
+	</g>
+</svg>
