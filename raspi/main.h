@@ -4,7 +4,7 @@
 #include "beaufort.h"
 
 struct CurrentWeather {
-    uint64_t timestamp;     // Units: Unix time
+    int64_t timestamp;      // Units: Unix time
     double temp;            // Units: degrees Celsius
     double feels_like;      // Units: degrees Celsius
     std::string weather;    // English weather description
@@ -19,14 +19,14 @@ struct Precipitation {
 };
 
 struct HourlyWeather {
-    uint64_t timestamp;     // Units: Unix time
+    int64_t timestamp;      // Units: Unix time
     double temp;            // Units: degrees Celsius
     double pop;             // Probability of precipitation  Units: 0 (0%) - 1 (100%)
-    std::string icon;       // Icon to use
+    std::string icon;       // Icon to use  (currently unused)
 };
 
 struct DailyWeather {
-    uint64_t timestamp;     // Units: Unix time  todo check correct type
+    int64_t timestamp;      // Units: Unix time
     double hi;              // Units: degrees Celsius
     double lo;              // Units: degrees Celsius
     std::string weather;    // English weather description

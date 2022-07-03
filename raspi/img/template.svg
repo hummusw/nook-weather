@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600"><defs>
+		<style>
+			text{font-family:ArialMT, Arial, "Liberation Sans";dominant-baseline:hanging;}
+			.gridline{stroke:black; stroke-width:2px;}
+			.hourlygrid{stroke:black; stroke-width:1px;}
+			.hourlyhour{font-size:20px; text-anchor:middle;}
+			.hourlytemp{font-size:20px; text-anchor:end; dominant-baseline:middle;}
+			.hourlygraph{stroke:black; stroke-width:2px;}
+			.hourlyrain{fill:silver;}
+			.bottomanchor{dominant-baseline:alphabetic;}
+			.header1,.header2{text-decoration:underline;}
+			.header1{font-size:32px;}
+			.header2{font-size:24px;}
+			.small{font-size:20px;}
+			.medium{font-size:24px;}
+			.alertshow{font-size:24px;fill:white;text-anchor:middle; dominant-baseline:middle;}
+		</style>
+	</defs>
+	<g id="group-grid">
+		<rect fill="white" x="0" y="0" width="800" height="600"/>
+		<line class="gridline" x1="480" y1="300" x2="800" y2="300"/>
+		<line class="gridline" y1="100" x2="800" y2="100"/>
+		<line class="gridline" y1="500" x2="800" y2="500"/>
+		<line class="gridline" x1="160" y1="500" x2="160" y2="600"/>
+		<line class="gridline" x1="320" y1="500" x2="320" y2="600"/>
+		<line class="gridline" x1="480" y1="100" x2="480" y2="600"/>
+		<line class="gridline" x1="640" y1="500" x2="640" y2="600"/>
+	</g>
+	<g id="group-date">
+		<text id="text-date" x="400" y="50" font-size="40px" style="dominant-baseline:middle" text-anchor="middle"></text>
+	</g>
+	<g id="group-current">
+		<text class="header1" x="20" y="120">Now</text>
+		<text id="text-current-updated" class="small" x="459" y="120" text-anchor="end">Updated at </text>
+		<text id="text-current-wind" class="small" x="20" y="168">Wind: </text>
+		<text id="text-current-humidity" class="small" x="20" y="204">Humidity: </text>
+		<text id="text-current-feels_like" class="small" x="20" y="240">Feels like: </text>
+		<text id="text-current-temp" class="bottomanchor" x="20" y="435" style="font-size:100px"></text>
+		<text id="text-current-weather" class="bottomanchor" x="20" y="479" style="font-size:28px"></text>
+		<image x="259" y="200" width="200" height="200" href="" xlink:href=""/>
+	</g>
+	<g id="group-precipitation">
+		<text class="header2" x="500" y="120">Precipitation</text>
+		<text id="text-precipitation-1hr" class="medium" x="500" y="200">1 hour: </text>
+		<text id="text-precipitation-today" class="medium" x="500" y="240">Today: </text>
+		<image x="652" y="136" width="128" height="128" opacity="0.5" href="" xlink:href=""/>
+	</g>
+	<g id="group-hourly">
+		<text class="header2" x="500" y="320">Hourly</text>
+
+		<polygon class="hourlyrain" points="" />
+
+		<line class="hourlygrid" x1="550" y1="350" x2="550" y2="470"/>
+		<line class="hourlygrid" x1="570" y1="350" x2="570" y2="470"/>
+		<line class="hourlygrid" x1="590" y1="350" x2="590" y2="470"/>
+		<line class="hourlygrid" x1="610" y1="350" x2="610" y2="470"/>
+		<line class="hourlygrid" x1="630" y1="350" x2="630" y2="470"/>
+		<line class="hourlygrid" x1="650" y1="350" x2="650" y2="470"/>
+		<line class="hourlygrid" x1="670" y1="350" x2="670" y2="470"/>
+		<line class="hourlygrid" x1="690" y1="350" x2="690" y2="470"/>
+		<line class="hourlygrid" x1="710" y1="350" x2="710" y2="470"/>
+		<line class="hourlygrid" x1="730" y1="350" x2="730" y2="470"/>
+		<line class="hourlygrid" x1="750" y1="350" x2="750" y2="470"/>
+		<line class="hourlygrid" x1="770" y1="350" x2="770" y2="470"/>
+
+		<line class="hourlygrid" x1="540" y1="360" x2="780" y2="360"/>
+		<line class="hourlygrid" x1="540" y1="460" x2="780" y2="460"/>
+
+		<text class="hourlyhour" x="550" y="474"></text>
+		<text class="hourlyhour" x="570" y="474"></text>
+		<text class="hourlyhour" x="590" y="474"></text>
+		<text class="hourlyhour" x="610" y="474"></text>
+		<text class="hourlyhour" x="630" y="474"></text>
+		<text class="hourlyhour" x="650" y="474"></text>
+		<text class="hourlyhour" x="670" y="474"></text>
+		<text class="hourlyhour" x="690" y="474"></text>
+		<text class="hourlyhour" x="710" y="474"></text>
+		<text class="hourlyhour" x="730" y="474"></text>
+		<text class="hourlyhour" x="750" y="474"></text>
+		<text class="hourlyhour" x="770" y="474"></text>
+
+		<text class="hourlytemp" x="536" y="360"></text>
+		<text class="hourlytemp" x="536" y="460"></text>
+
+		<line class="hourlygraph" x1="550" y1="460" x2="570" y2="460"/>
+		<line class="hourlygraph" x1="570" y1="460" x2="590" y2="460"/>
+		<line class="hourlygraph" x1="590" y1="460" x2="610" y2="460"/>
+		<line class="hourlygraph" x1="610" y1="460" x2="630" y2="460"/>
+		<line class="hourlygraph" x1="630" y1="460" x2="650" y2="460"/>
+		<line class="hourlygraph" x1="650" y1="460" x2="670" y2="460"/>
+		<line class="hourlygraph" x1="670" y1="460" x2="690" y2="460"/>
+		<line class="hourlygraph" x1="690" y1="460" x2="710" y2="460"/>
+		<line class="hourlygraph" x1="710" y1="460" x2="730" y2="460"/>
+		<line class="hourlygraph" x1="730" y1="460" x2="750" y2="460"/>
+		<line class="hourlygraph" x1="750" y1="460" x2="770" y2="460"/>
+	</g>
+	<g id="group-daily">
+		<text id="text-day0-dow" class="medium" x="20" y="520"></text>
+		<text id="text-day0-temps" class="small bottomanchor" x="20" y="580"></text>
+		<image id="text-day0-icon" x="86" y="518" width="64" height="64" href="" xlink:href="" />
+		<text id="text-day1-dow" class="medium" x="180" y="520"></text>
+		<text id="text-day1-temps" class="small bottomanchor" x="180" y="580"></text>
+		<image id="text-day1-icon" x="246" y="518" width="64" height="64" href="" xlink:href="" />
+		<text id="text-day2-dow" class="medium" x="340" y="520"></text>
+		<text id="text-day2-temps" class="small bottomanchor" x="340" y="580"></text>
+		<image id="text-day2-icon" x="406" y="518" width="64" height="64" href="" xlink:href="" />
+		<text id="text-day3-dow" class="medium" x="500" y="520"></text>
+		<text id="text-day3-temps" class="small bottomanchor" x="500" y="580"></text>
+		<image id="text-day3-icon" x="566" y="518" width="64" height="64" href="" xlink:href="" />
+		<text id="text-day4-dow" class="medium" x="660" y="520"></text>
+		<text id="text-day4-temps" class="small bottomanchor" x="660" y="580"></text>
+		<image id="text-day4-icon" x="726" y="518" width="64" height="64" href="" xlink:href="" />
+	</g>
+	<g id="group-alerts">
+		<rect x="480" y="500" width="320" height="100"/>
+		<text class="alertshow" x="640" y="550"></text>
+	</g>
+</svg>
