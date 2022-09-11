@@ -56,7 +56,7 @@ double Beaufort::get_wind_speed() const {
 
 /**
  * Gets Beaufort number
- * 
+ *
  * @return Beaufort number
  */
 int Beaufort::get_number() const {
@@ -70,4 +70,13 @@ int Beaufort::get_number() const {
  */
 std::string Beaufort::get_description() const {
     return description;
+}
+
+/**
+ * Gets summary to show on weather display
+ *
+ * @return Beaufort number and description
+ */
+std::string Beaufort::get_summary() const {
+    return std::to_string(number) + " - " + description;
 }
